@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>O mnie</title>
+    <link rel="stylesheet"  href ={{ url_for('static', filename="style.css")}} >
+</head>
+    <body>
+    <h1>Witaj na mojej stronie domowej</h1>
+    <img src="{{url_for('static', filename='jacek.jpg')}}" alt="Jacek Pietraszkiewicz" title="Zdjęcie">
+    <h2>O mnie</h2>
+    <p class="opis"><strong>imię:</strong> Jacek</p>
+    <p class="opis"><strong>nazwisko:</strong> Pietraszkiewicz</p>
+
+	<form action="" method="POST">
+        <p></p>
+        <label class="opis">A Ty kto jesteś: </label>
+        <input name="firstname"/>
+        <input type="submit"/>
+    </form>
+    </body>
+</html>
